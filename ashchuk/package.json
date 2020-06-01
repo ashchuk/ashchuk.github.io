@@ -22,7 +22,9 @@
     "@angular/platform-browser-dynamic": "~9.1.7",
     "@angular/router": "~9.1.7",
     "@angular/service-worker": "~9.1.7",
-    "rxjs": "~6.5.4",
+    "@ngneat/transloco": "^2.17.1",
+    "material-design-icons": "^3.0.1",
+    "rxjs": "^6.5.5",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
