@@ -1,32 +1,78 @@
-
-
 <div class="intro">
 
   <div class="language-selector">
     <mat-select (selectionChange)="updateLocale($event.value)" [(value)]="locale" class="select-css">
-      <mat-option *ngFor="let l of locales" [value]="l.value" >{{ l.label }}</mat-option>
+      <mat-option *ngFor="let l of locales" [value]="l.value">{{ l.label }}</mat-option>
     </mat-select>
   </div>
-
-  <h1>{{ 'greetings' | transloco }}</h1>
-  <div [innerHTML]="'1F44B' | emoji " class="emoji-large"></div>
-  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-    magna aliqua.</h3>
-  <h3>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-
-  <h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</h3>
-  <h3>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-    eos qui ratione voluptatem sequi nesciunt. </h3>
-  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-    magna aliqua:</h3>
+  <div class="intro-row">
+    <h1>{{ 'greetings' | transloco }}</h1>
+    <div [innerHTML]="'1F44B' | emoji " class="emoji-large"></div>
+  </div>
+  <h3>{{ 'about.0' | transloco }}</h3>
+  <h3>{{ 'about.1' | transloco }}</h3>
+  <h3>{{ 'about.2' | transloco }}</h3>
+  <h3>{{ 'about.3' | transloco }}</h3>
+  <h3>{{ 'about.4' | transloco }}</h3>
 
 </div>
 
 <div class="content" role="main">
 
+  <!-- About skills -->
+  <h2>Skills</h2>
+  <p>I'm worked and familiar with:</p>
+  <div class="skills-area">
+    <mat-chip color="primary">C#</mat-chip>
+    <mat-chip color="primary">Dotnet Core</mat-chip>
+    <mat-chip color="primary">Dotnet Framework</mat-chip>
+    <mat-chip color="primary">JavaScript</mat-chip>
+    <mat-chip color="primary">TypeScript</mat-chip>
+    <mat-chip color="primary">PostgreSQL</mat-chip>
+    <mat-chip color="accent">Entity Framework</mat-chip>
+    <mat-chip color="accent">Angular2+</mat-chip>
+    <mat-chip color="primary">Kubernetes</mat-chip>
+    <mat-chip color="primary">OpenShift</mat-chip>
+    <mat-chip color="accent">Docker</mat-chip>
+    <mat-chip color="accent">MS TFS</mat-chip>
+    <mat-chip color="primary">Java</mat-chip>
+    <mat-chip color="accent">Android</mat-chip>
+    <mat-chip color="accent">Android Architecture Components</mat-chip>
+    <mat-chip color="accent">RxJava</mat-chip>
+    <mat-chip color="accent">Firebase</mat-chip>
+    <mat-chip color="accent">Dagger2</mat-chip>
+    <mat-chip color="accent">ButterKnife</mat-chip>
+    <mat-chip color="accent">DataBinding</mat-chip>
+    <mat-chip color="accent">UWP</mat-chip>
+    <mat-chip color="accent">MVC</mat-chip>
+    <mat-chip color="accent">MVP</mat-chip>
+    <mat-chip color="accent">MVVM</mat-chip>
+    <mat-chip color="accent">XAML</mat-chip>
+    <mat-chip color="accent">Linux</mat-chip>
+    <mat-chip color="primary">bash</mat-chip>
+    <mat-chip color="accent">Git</mat-chip>
+    <mat-chip color="accent">Bootstrap</mat-chip>
+    <mat-chip color="accent">Material</mat-chip>
+    <mat-chip color="accent">Linq</mat-chip>
+    <mat-chip color="accent">Python</mat-chip>
+    <mat-chip color="accent">Django</mat-chip>
+    <mat-chip color="accent">Tornado</mat-chip>
+    <mat-chip color="accent">React</mat-chip>
+    <mat-chip color="accent">HTML5/CSS3</mat-chip>
+    <mat-chip color="accent">MongoDB</mat-chip>
+    <mat-chip color="accent">MySQL</mat-chip>
+    <mat-chip color="accent">MS SQL</mat-chip>
+    <mat-chip color="primary">ElasticSearch</mat-chip>
+    <mat-chip color="primary">fluentd</mat-chip>
+    <mat-chip color="primary">Kibana</mat-chip>
+    <mat-chip color="primary">keepalived</mat-chip>
+    <mat-chip color="primary">Grafana</mat-chip>
+    <mat-chip color="primary">pgpool2</mat-chip>
+    <mat-chip color="primary">Redis</mat-chip>
+    <mat-chip color="primary">websocket</mat-chip>
+    <mat-chip color="primary">NFS</mat-chip>
+    <mat-chip color="primary">RabbitMQ</mat-chip>
+  </div>
   <!-- Resources -->
 
   <h2>Resources</h2>
@@ -73,9 +119,6 @@
         <mat-chip>React</mat-chip>
         <mat-chip>NodeJS</mat-chip>
         <mat-chip>WebRTC</mat-chip>
-        <mat-chip>Docker</mat-chip>
-        <mat-chip>Kubernetes</mat-chip>
-        <mat-chip>Helm</mat-chip>
       </mat-chip-list>
       <h1>Keywords:</h1>
       <mat-chip-list aria-label="Fish selection">

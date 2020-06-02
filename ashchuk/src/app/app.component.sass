@@ -12,9 +12,24 @@ h1, h2, h3, h4, h5, h6
 p
   margin: 0
 
+.intro-row
+  display: flex
+  flex-direction: row
+  align-items: center
+
+mat-chip
+  margin: 4px
+
+.skills-area
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  flex-direction: row
+
 .emoji-large
   height: 32px
   width: 32px
+  margin: 0 8px
 
 .language-selector
   width: 100px
@@ -70,7 +85,6 @@ svg.material-icons
   flex: 1
   margin: 8px 8px
   max-width: 300px
-
 
 .item-header-image
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg')

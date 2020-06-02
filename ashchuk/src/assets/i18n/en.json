@@ -1,24 +1,26 @@
 {
-  "greetings":"Привет!",
+  "greetings":"Hi!",
   "about":{
-    "1":"Я тимлид-программист.",
-    "2":"На хакатоне Цифровой прорыв 2019 заняли с командой первое место в треке, прошел программу преакселерации ФРИИ, всвячески поддерживаю региональные IT конкурсы экспертизой и участием, GDG Tula Co-organizer, участвую в scholarship-ах, не перестаю учиться и смотреть по сторонам в поисках всякого интересного.",
-    "3":"Писал распределенное приложение на стеке Docker, Kubernetes, Calico, Helm, PostgreSQL, RabbitMQ, ELK, Redis, .Net Core, Angular 2+, настраивал сборку в MS TFS, настраивал Centos/RHEL серверы, потоковую репликацию в PostgreSQL, pgpool, nginx, NFS,  Fluentd, делал sticky session для SignalR websocket, писал и переписывал helm чарты."
+    "0":"My name is Artyom Koshko",
+    "1":"I'm teamlead, developer , GDG Tula Co-organizer.",
+    "2":"I actively participate in competitions, hackathons, scholarships like Udacity scholarships. With my team I participated and successfully finished the IIDF business acceleration program, so I have experience in leadership, startup, and business development.",
+    "3":"I like to share my knowledge with other people. That's my way to help other people to be successful in the IT field and improve my own skills too. I also engage in educational activities, organize and manage masterclasses inside my company.",
+    "4":"I aim to become a comprehensive experienced googlier-like engineer. I hope to create online campaigns and community to inspire youth and make world the better place."
   },
   "skills":{
     "soft":{
-      "1":"Координация работы команды и развитие персонала",
-      "2":"Проведение собеседований",
-      "3":"Обучение стажеров, оценка навыков и компетенций",
-      "4":"Проведение мастер-классов, видео обучения",
-      "5":"Разработка технического задания и инструкций",
-      "6":"Составление корпоративных предложений на разработку ПО и систем",
-      "7":"Составление архитектурных и инфраструктурных схем",
-      "8":"Составление плана проекта, этапов проекта, оценка трудозатрат",
-      "9":"Оценка стоимости проекта в MS Project",
-      "10":"Декомпозиция задач, контроль выполнения задач, code review, pull request, курирование разработки",
-      "11":"Деловая переписка, деловые встречи, презентации решений, участие в presale",
-      "12":"Поддержка эмоционального фона команды, организация участия в конкурсах и хакатонах"
+      "1":"Teamwork coordination, staff development",
+      "2":"Employee interview",
+      "3":"Corporate training, assessment of skills and competencies",
+      "4":"Conducting master classes, video training",
+      "5":"Technical specifications and instructions",
+      "6":"Preparation of corporate proposals for the software and systems development",
+      "7":"Drawing up architectural and infrastructure schemes",
+      "8":"Drawing up a project plan, project stages, assessment of labor costs",
+      "9":"Project cost estimation using MS Project",
+      "10":"Task decomposition, task execution control, code review, pull requests",
+      "11":"Business correspondence, business meetings, presentation of decisions, participation in presales",
+      "12":"Support for the emotional background of the team, organization of participation in contests and hackathons"
     },
     "hard":{
       "1":"dotnet",
