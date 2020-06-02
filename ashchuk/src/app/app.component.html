@@ -9,6 +9,7 @@
   </div>
 
   <h1>{{ 'greetings' | transloco }}</h1>
+  <div [innerHTML]="'1F44B' | emoji " class="emoji-large"></div>
   <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
     magna aliqua.</h3>
   <h3>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
@@ -44,6 +45,45 @@
       <span>Resume</span>
     </a>
 
+  </div>
+
+  <!-- App 0 -->
+
+  <div class="card-container">
+    <mat-card class="item-card">
+      <mat-card-header>
+        <mat-card-title>Webchat</mat-card-title>
+        <mat-card-subtitle>Web application</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="./assets/img/webchat.png" alt="WebRTC web chat app">
+      <mat-card-content>
+        <h3>
+          React chat application using peer to peer WebRTC
+        </h3>
+      </mat-card-content>
+      <div class="button-row">
+        <button mat-raised-button class="mat-button" color="primary">LIKE</button>
+        <button mat-raised-button class="mat-button" color="primary">SHARE</button>
+      </div>
+    </mat-card>
+
+    <div class="project-description">
+      <h1>Technology stack:</h1>
+      <mat-chip-list aria-label="Fish selection">
+        <mat-chip>React</mat-chip>
+        <mat-chip>NodeJS</mat-chip>
+        <mat-chip>WebRTC</mat-chip>
+        <mat-chip>Docker</mat-chip>
+        <mat-chip>Kubernetes</mat-chip>
+        <mat-chip>Helm</mat-chip>
+      </mat-chip-list>
+      <h1>Keywords:</h1>
+      <mat-chip-list aria-label="Fish selection">
+        <mat-chip>Web app</mat-chip>
+        <mat-chip>Peer to peer</mat-chip>
+        <mat-chip>Let's Encrypt</mat-chip>
+      </mat-chip-list>
+    </div>
   </div>
 
   <!-- App 1 -->
@@ -138,7 +178,7 @@
         <mat-card-title>Photosender</mat-card-title>
         <mat-card-subtitle>Mobile application</mat-card-subtitle>
       </mat-card-header>
-      <img mat-card-image src="./assets/img/photosender.png" alt="Android notification app">
+      <img mat-card-image src="./assets/img/photosender.png" alt="Android photo sharing app">
       <mat-card-content>
         <h3>
           Android app to share photos with your friends.
@@ -173,7 +213,6 @@
       </mat-chip-list>
     </div>
   </div>
-
 
   <!-- Links -->
   <div class="card-container">

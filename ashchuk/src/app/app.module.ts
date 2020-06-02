@@ -14,10 +14,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
 import {MatSelectModule} from '@angular/material/select';
 import {MatChipsModule} from '@angular/material/chips';
+import { EmojiPipe } from './emoji.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EmojiPipe
   ],
     imports: [
         BrowserModule,
