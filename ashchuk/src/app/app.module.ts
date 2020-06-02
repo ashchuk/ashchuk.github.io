@@ -13,23 +13,25 @@ import {MatButtonModule} from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
 import {MatSelectModule} from '@angular/material/select';
+import {MatChipsModule} from '@angular/material/chips';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production}),
-    BrowserAnimationsModule,
-    MatStepperModule,
-    MatCardModule,
-    MatButtonModule,
-    HttpClientModule,
-    TranslocoRootModule,
-    MatSelectModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production}),
+        BrowserAnimationsModule,
+        MatStepperModule,
+        MatCardModule,
+        MatButtonModule,
+        HttpClientModule,
+        TranslocoRootModule,
+        MatSelectModule,
+        MatChipsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
