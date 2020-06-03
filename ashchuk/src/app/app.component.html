@@ -7,13 +7,19 @@
   </div>
   <div class="intro-row">
     <h1>{{ 'greetings' | transloco }}</h1>
-    <div [innerHTML]="'1F44B' | emoji " class="emoji-large"></div>
+    <i [innerHTML]="'1F44B' | emoji " class="emoji-large"></i>
   </div>
   <h3>{{ 'about.0' | transloco }}</h3>
   <h3>{{ 'about.1' | transloco }}</h3>
-  <h3>{{ 'about.2' | transloco }}</h3>
-  <h3>{{ 'about.3' | transloco }}</h3>
-  <h3>{{ 'about.4' | transloco }}</h3>
+  <div class="intro-row">
+    <h3>{{ 'about.2.1' | transloco }}🧪
+    {{ 'about.2.2' | transloco }}🛹</h3>
+  </div>
+  <div class="intro-row">
+    <h3>{{ 'about.3.1' | transloco }}📈{{ 'about.3.2' | transloco }}</h3>
+  </div>
+  <h3>{{ 'about.4.1' | transloco }}📖{{ 'about.4.2' | transloco }}💪{{ 'about.4.3' | transloco }}</h3>
+  <h3>{{ 'about.5.1' | transloco }}🔧{{ 'about.5.2' | transloco }}🌍</h3>
 
 </div>
 
