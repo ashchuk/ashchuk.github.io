@@ -1,0 +1,68 @@
+{
+  "greetings": "Hi!",
+  "resources.title": "Resources and projects",
+  "resources.subtitle": "Here are some links to help you learn more about me:",
+  "stack": "Technology stack:",
+  "keywords": "Keywords:",
+  "project1": {
+    "title": "Webchat",
+    "subtitle": "Web application",
+    "description": "React conf-call application: video, audio, text messaging."
+  },
+  "project2": {
+    "title": "UWP Image Editor",
+    "subtitle": "Mobile application",
+    "description": "Simple image editor written using MVVM pattern. Well structured and minimalistic."
+  },
+  "project3": {
+    "title": "CuckooApp",
+    "subtitle": "Mobile application",
+    "description": "Cuckoo helps other people edit your task list and notify your friends about what you are currently doing."
+  },
+  "project4": {
+    "title": "Photosender",
+    "subtitle": "Mobile application",
+    "description": "Photo sharing application with geolocation and 3D world map."
+  },
+  "about": {
+    "0": "My name is Artyom Koshko",
+    "1": "I'm teamlead, developer, GDG Tula Co-organizer, family man.",
+    "2": {
+      "1": "I love experiments ",
+      "2": "and challenges. And skateboarding too"
+    },
+    "3": {
+      "1": "I actively participate in competitions, hackathons, scholarships. With my team I participated and successfully finished the IIDF business acceleration program ",
+      "2": ", so I have experience in leadership, startup, and business development."
+    },
+    "4": {
+      "1": "I like to share my knowledge ",
+      "2": ". That's my way to help other people to be successful in the IT field and improve my own skills too",
+      "3": ". I also engage in educational activities, organize and manage masterclasses inside my company."
+    },
+    "5": {
+      "1": "I aim to become a comprehensive experienced engineer ",
+      "2": ". I hope to create online campaigns and community to inspire youth and make world the better place "}
+  },
+  "skills": {
+    "soft": {
+      "1": "Teamwork coordination, staff development",
+      "2": "Employee interview",
+      "3": "Corporate training, assessment of skills and competencies",
+      "4": "Conducting master classes, video training",
+      "5": "Technical specifications and instructions",
+      "6": "Preparation of corporate proposals for the software and systems development",
+      "7": "Drawing up architectural and infrastructure schemes",
+      "8": "Drawing up a project plan, project stages, assessment of labor costs",
+      "9": "Project cost estimation using MS Project",
+      "10": "Task decomposition, task execution control, code review, pull requests",
+      "11": "Business correspondence, business meetings, presentation of decisions, participation in presales",
+      "12": "Support for the emotional background of the team, organization of participation in contests and hackathons"
+    },
+    "hard": {
+      "1": "dotnet",
+      "2": "angular",
+      "3": "kubernetes"
+    }
+  }
+}
