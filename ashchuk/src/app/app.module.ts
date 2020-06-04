@@ -15,25 +15,27 @@ import { TranslocoRootModule } from './transloco-root.module';
 import {MatSelectModule} from '@angular/material/select';
 import {MatChipsModule} from '@angular/material/chips';
 import { EmojiPipe } from './emoji.pipe';
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmojiPipe
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production}),
-        BrowserAnimationsModule,
-        MatStepperModule,
-        MatCardModule,
-        MatButtonModule,
-        HttpClientModule,
-        TranslocoRootModule,
-        MatSelectModule,
-        MatChipsModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production}),
+    BrowserAnimationsModule,
+    MatStepperModule,
+    MatCardModule,
+    MatButtonModule,
+    HttpClientModule,
+    TranslocoRootModule,
+    MatSelectModule,
+    MatChipsModule,
+    MatDividerModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -25,64 +25,8 @@
 
 <div class="content" role="main">
 
-  <!-- About skills -->
-  <h2>Skills</h2>
-  <p>I'm worked and familiar with:</p>
-  <div class="skills-area">
-    <mat-chip color="primary">C#</mat-chip>
-    <mat-chip color="primary">Dotnet Core</mat-chip>
-    <mat-chip color="primary">Dotnet Framework</mat-chip>
-    <mat-chip color="primary">JavaScript</mat-chip>
-    <mat-chip color="primary">TypeScript</mat-chip>
-    <mat-chip color="primary">PostgreSQL</mat-chip>
-    <mat-chip color="accent">Entity Framework</mat-chip>
-    <mat-chip color="accent">Angular2+</mat-chip>
-    <mat-chip color="primary">Kubernetes</mat-chip>
-    <mat-chip color="primary">OpenShift</mat-chip>
-    <mat-chip color="accent">Docker</mat-chip>
-    <mat-chip color="accent">MS TFS</mat-chip>
-    <mat-chip color="primary">Java</mat-chip>
-    <mat-chip color="accent">Android</mat-chip>
-    <mat-chip color="accent">Android Architecture Components</mat-chip>
-    <mat-chip color="accent">RxJava</mat-chip>
-    <mat-chip color="accent">Firebase</mat-chip>
-    <mat-chip color="accent">Dagger2</mat-chip>
-    <mat-chip color="accent">ButterKnife</mat-chip>
-    <mat-chip color="accent">DataBinding</mat-chip>
-    <mat-chip color="accent">UWP</mat-chip>
-    <mat-chip color="accent">MVC</mat-chip>
-    <mat-chip color="accent">MVP</mat-chip>
-    <mat-chip color="accent">MVVM</mat-chip>
-    <mat-chip color="accent">XAML</mat-chip>
-    <mat-chip color="accent">Linux</mat-chip>
-    <mat-chip color="primary">bash</mat-chip>
-    <mat-chip color="accent">Git</mat-chip>
-    <mat-chip color="accent">Bootstrap</mat-chip>
-    <mat-chip color="accent">Material</mat-chip>
-    <mat-chip color="accent">Linq</mat-chip>
-    <mat-chip color="accent">Python</mat-chip>
-    <mat-chip color="accent">Django</mat-chip>
-    <mat-chip color="accent">Tornado</mat-chip>
-    <mat-chip color="accent">React</mat-chip>
-    <mat-chip color="accent">HTML5/CSS3</mat-chip>
-    <mat-chip color="accent">MongoDB</mat-chip>
-    <mat-chip color="accent">MySQL</mat-chip>
-    <mat-chip color="accent">MS SQL</mat-chip>
-    <mat-chip color="primary">ElasticSearch</mat-chip>
-    <mat-chip color="primary">fluentd</mat-chip>
-    <mat-chip color="primary">Kibana</mat-chip>
-    <mat-chip color="primary">keepalived</mat-chip>
-    <mat-chip color="primary">Grafana</mat-chip>
-    <mat-chip color="primary">pgpool2</mat-chip>
-    <mat-chip color="primary">Redis</mat-chip>
-    <mat-chip color="primary">websocket</mat-chip>
-    <mat-chip color="primary">NFS</mat-chip>
-    <mat-chip color="primary">RabbitMQ</mat-chip>
-  </div>
-  <!-- Resources -->
-
-  <h2>Resources</h2>
-  <p>Here are some links to help you get started:</p>
+  <h2>{{ 'resources.title' | transloco }}</h2>
+  <p>{{ 'resources.subtitle' | transloco }}</p>
 
   <div class="card-container">
     <a class="card" target="_blank" rel="noopener" href="https://blog.ashchuk.space">
@@ -97,36 +41,44 @@
       <span>Resume</span>
     </a>
 
+    <a class="card" target="_blank" rel="noopener" href="https://www.meetup.com/ru-RU/GDG-Tula/">
+      <span>Meetup</span>
+    </a>
   </div>
+  <mat-divider></mat-divider>
 
   <!-- App 0 -->
-
   <div class="card-container">
     <mat-card class="item-card">
       <mat-card-header>
-        <mat-card-title>Webchat</mat-card-title>
-        <mat-card-subtitle>Web application</mat-card-subtitle>
+        <mat-card-title>{{ 'project1.title' | transloco }}</mat-card-title>
+        <mat-card-subtitle>{{ 'project1.subtitle' | transloco }}</mat-card-subtitle>
       </mat-card-header>
       <img mat-card-image src="./assets/img/webchat.png" alt="WebRTC web chat app">
       <mat-card-content>
         <h3>
-          React chat application using peer to peer WebRTC
+          {{ 'project1.description' | transloco }}
         </h3>
       </mat-card-content>
       <div class="button-row">
-        <button mat-raised-button class="mat-button" color="primary">LIKE</button>
-        <button mat-raised-button class="mat-button" color="primary">SHARE</button>
+        <a mat-stroked-button class="mat-button" href="https://www.google.com/" color="primary" target="_blank">GitHub</a>
+        <a mat-stroked-button class="mat-button" href="https://www.google.com/" color="primary" target="_blank">Demo</a>
+        <a mat-stroked-button class="mat-button" href="https://www.google.com/" color="primary" target="_blank">YouTube</a>
       </div>
     </mat-card>
 
     <div class="project-description">
-      <h1>Technology stack:</h1>
-      <mat-chip-list aria-label="Fish selection">
+      <h1>{{ 'stack' | transloco }}</h1>
+      <mat-chip-list aria-label="WebRTC app">
         <mat-chip>React</mat-chip>
         <mat-chip>NodeJS</mat-chip>
         <mat-chip>WebRTC</mat-chip>
+        <mat-chip>Kubernetes</mat-chip>
+        <mat-chip>Helm</mat-chip>
+        <mat-chip>Docker</mat-chip>
+        <mat-chip>websocket</mat-chip>
       </mat-chip-list>
-      <h1>Keywords:</h1>
+      <h1>{{ 'keywords' | transloco }}</h1>
       <mat-chip-list aria-label="Fish selection">
         <mat-chip>Web app</mat-chip>
         <mat-chip>Peer to peer</mat-chip>
@@ -134,29 +86,28 @@
       </mat-chip-list>
     </div>
   </div>
-
+  <mat-divider></mat-divider>
   <!-- App 1 -->
 
   <div class="card-container">
     <mat-card class="item-card">
       <mat-card-header>
-        <mat-card-title>UWP Image Editor</mat-card-title>
-        <mat-card-subtitle>Mobile application</mat-card-subtitle>
+        <mat-card-title>{{ 'project2.title' | transloco }}</mat-card-title>
+        <mat-card-subtitle>{{ 'project2.subtitle' | transloco }}</mat-card-subtitle>
       </mat-card-header>
       <img mat-card-image src="./assets/img/uwpeditor.png" alt="UWP image editor app">
       <mat-card-content>
         <h3>
-          Simple UWP image editor written using MVVM pattern. Well structured and minimalistic.
+          {{ 'project2.description' | transloco }}
         </h3>
       </mat-card-content>
       <div class="button-row">
-        <button mat-raised-button class="mat-button" color="primary">LIKE</button>
-        <button mat-raised-button class="mat-button" color="primary">SHARE</button>
+        <a mat-stroked-button class="mat-button" href="https://www.google.com/" color="primary" target="_blank">GitHub</a>
       </div>
     </mat-card>
 
     <div class="project-description">
-      <h1>Technology stack:</h1>
+      <h1>{{ 'stack' | transloco }}</h1>
       <mat-chip-list aria-label="Fish selection">
         <mat-chip>C#</mat-chip>
         <mat-chip>UWP</mat-chip>
@@ -166,7 +117,7 @@
         <mat-chip>Win2D</mat-chip>
         <mat-chip>Canvas</mat-chip>
       </mat-chip-list>
-      <h1>Keywords:</h1>
+      <h1>{{ 'keywords' | transloco }}</h1>
       <mat-chip-list aria-label="Fish selection">
         <mat-chip>Mobile app</mat-chip>
         <mat-chip>Windows 10</mat-chip>
@@ -174,29 +125,28 @@
       </mat-chip-list>
     </div>
   </div>
-
+  <mat-divider></mat-divider>
   <!-- App 2 -->
 
   <div class="card-container">
     <mat-card class="item-card">
       <mat-card-header>
-        <mat-card-title>CuckooApp</mat-card-title>
-        <mat-card-subtitle>Mobile application</mat-card-subtitle>
+        <mat-card-title>{{ 'project3.title' | transloco }}</mat-card-title>
+        <mat-card-subtitle>{{ 'project3.subtitle' | transloco }}</mat-card-subtitle>
       </mat-card-header>
       <img mat-card-image src="./assets/img/cuckooapp.png" alt="Android notification app">
       <mat-card-content>
         <h3>
-          Cuckoo helps other people edit your task list and notify your friends about what you are currently doing.
+          {{ 'project3.description' | transloco }}
         </h3>
       </mat-card-content>
       <div class="button-row">
-        <button mat-raised-button class="mat-button" color="primary">LIKE</button>
-        <button mat-raised-button class="mat-button" color="primary">SHARE</button>
+        <a mat-stroked-button class="mat-button" href="https://www.google.com/" color="primary" target="_blank">GitHub</a>
       </div>
     </mat-card>
 
     <div class="project-description">
-      <h1>Technology stack:</h1>
+      <h1>{{ 'stack' | transloco }}</h1>
       <mat-chip-list aria-label="Fish selection">
         <mat-chip>Java</mat-chip>
         <mat-chip>Android</mat-chip>
@@ -209,7 +159,7 @@
         <mat-chip>Firebase</mat-chip>
         <mat-chip>Firebase</mat-chip>
       </mat-chip-list>
-      <h1>Keywords:</h1>
+      <h1>{{ 'keywords' | transloco }}</h1>
       <mat-chip-list aria-label="Fish selection">
         <mat-chip>Mobile app</mat-chip>
         <mat-chip>Android</mat-chip>
@@ -218,29 +168,28 @@
       </mat-chip-list>
     </div>
   </div>
-
+  <mat-divider></mat-divider>
   <!-- App 3 -->
 
   <div class="card-container">
     <mat-card class="item-card">
       <mat-card-header>
-        <mat-card-title>Photosender</mat-card-title>
-        <mat-card-subtitle>Mobile application</mat-card-subtitle>
+        <mat-card-title>{{ 'project4.title' | transloco }}</mat-card-title>
+        <mat-card-subtitle>{{ 'project4.subtitle' | transloco }}</mat-card-subtitle>
       </mat-card-header>
       <img mat-card-image src="./assets/img/photosender.png" alt="Android photo sharing app">
       <mat-card-content>
         <h3>
-          Android app to share photos with your friends.
+          {{ 'project4.description' | transloco }}
         </h3>
       </mat-card-content>
       <div class="button-row">
-        <button mat-raised-button class="mat-button" color="primary">LIKE</button>
-        <button mat-raised-button class="mat-button" color="primary">SHARE</button>
+        <a mat-stroked-button class="mat-button" href="https://www.google.com/" color="primary" target="_blank">GitHub</a>
       </div>
     </mat-card>
 
     <div class="project-description">
-      <h1>Technology stack:</h1>
+      <h1>{{ 'stack' | transloco }}</h1>
       <mat-chip-list aria-label="Fish selection">
         <mat-chip>Java</mat-chip>
         <mat-chip>Android</mat-chip>
@@ -252,7 +201,7 @@
         <mat-chip>Tornado</mat-chip>
         <mat-chip>Pillow</mat-chip>
       </mat-chip-list>
-      <h1>Keywords:</h1>
+      <h1>{{ 'keywords' | transloco }}</h1>
       <mat-chip-list aria-label="Fish selection">
         <mat-chip>Mobile app</mat-chip>
         <mat-chip>Android</mat-chip>
@@ -262,17 +211,6 @@
       </mat-chip-list>
     </div>
   </div>
-
-  <!-- Links -->
-  <div class="card-container">
-
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    Love Angular?&nbsp;
-    <a href="https://github.com/angular/angular" target="_blank" rel="noopener"> Give our repo a star. </a>
-  </footer>
 
   <svg id="clouds" alt="Gray Clouds Background" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677"
        viewBox="0 0 2611.084 485.677">

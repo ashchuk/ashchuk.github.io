@@ -1,5 +1,29 @@
 {
   "greetings": "Hi!",
+  "resources.title": "Resources and projects",
+  "resources.subtitle": "Here are some links to help you learn more about me:",
+  "stack": "Technology stack:",
+  "keywords": "Keywords:",
+  "project1": {
+    "title": "Webchat",
+    "subtitle": "Web application",
+    "description": "React conf-call application: video, audio, text messaging."
+  },
+  "project2": {
+    "title": "UWP Image Editor",
+    "subtitle": "Mobile application",
+    "description": "Simple image editor written using MVVM pattern. Well structured and minimalistic."
+  },
+  "project3": {
+    "title": "CuckooApp",
+    "subtitle": "Mobile application",
+    "description": "Cuckoo helps other people edit your task list and notify your friends about what you are currently doing."
+  },
+  "project4": {
+    "title": "Photosender",
+    "subtitle": "Mobile application",
+    "description": "Photo sharing application with geolocation and 3D world map."
+  },
   "about": {
     "0": "My name is Artyom Koshko",
     "1": "I'm teamlead, developer, GDG Tula Co-organizer, family man.",
@@ -12,7 +36,7 @@
       "2": ", so I have experience in leadership, startup, and business development."
     },
     "4": {
-      "1": "I like to share my knowledge with other people ",
+      "1": "I like to share my knowledge ",
       "2": ". That's my way to help other people to be successful in the IT field and improve my own skills too",
       "3": ". I also engage in educational activities, organize and manage masterclasses inside my company."
     },
